@@ -7,6 +7,7 @@ import Artists from './Artists.js'
 import Playlists from './Playlists.js'
 import Navbar from './Navbar';
 import Albumview from './Albumview'
+import Artistview from './Artistview';
 
 import pixel from './Pixel Rain.mp3'
 import churches from './CHVRCHES - The Mother We Share.mp3'
@@ -48,6 +49,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Albums />} />
           <Route path='/albums/:albumid' element={<Albumview setCurrentSong={setCurrentSong}/>} />
+          <Route path='/artists/:artistid' element={<Artistview />} />
           <Route path='/artists' element={<Artists />} />
           <Route path='/playlists' element={<Playlists />} />
         </Routes>

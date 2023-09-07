@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useRef } from 'react'
 import Volume from './Volume';
 
+import thundercat from './thundercat.png'
 export default function Console({audioElem, currentSong, setCurrentSong, songs, isplaying, setisplaying}) {
   const clickRef = useRef();
   const [volume, setVolume] = useState();
@@ -76,7 +77,11 @@ export default function Console({audioElem, currentSong, setCurrentSong, songs, 
 
   return (
     <div className='console'>
-      <div className='consoleblock'>{currentSong.title}</div>
+      <div className='consoleblock'>
+        <img className='lilimg' src={currentSong.photoLink} alt="img"/>
+        <div>{currentSong.title}</div>
+        <div>{currentSong.artist}</div>
+        </div>
 
       <div className='consoleblock'>
         <button onClick={skipBack}>Previous</button>
