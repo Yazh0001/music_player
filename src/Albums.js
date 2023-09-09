@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
-import obama from './Obama.png'
-import trump from './trump.png'
-import biden from './biden.png'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
+// import axios from 'axios'
 
 export default function Albums() {
   
-  const [albumList, setAlbumList] = useState([
+  const [albumList] = useState([
     {
         "albumId": "899809e8-57db-455e-bef0-e7aef2747043",
         "name": "It Is What It Is",

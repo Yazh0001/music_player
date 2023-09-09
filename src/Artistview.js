@@ -3,7 +3,7 @@ import { useState } from 'react'
 import thundercat from './thundercat.png'
 
 export default function Artistview() {
-    const [artist, setArtist] = useState(
+    const [artist] = useState(
         {
             "artistId": "d1b651fa-dff1-4a0c-9730-49acb3348aef",
             "name": "Thundercat",

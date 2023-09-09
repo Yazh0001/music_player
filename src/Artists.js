@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import thundercat from './thundercat.png'
-import axios from 'axios'
+// import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 export default function Artists() {
-  const [artistList, setArtistList] = useState([
+  const [artistList] = useState([
     {
         "artistId": "d1b651fa-dff1-4a0c-9730-49acb3348aef",
         "name": "Thundercat",
@@ -16,7 +16,7 @@ export default function Artists() {
   // useEffect(() => {
   //   axios.get('http://ec2-54-173-144-181.compute-1.amazonaws.com:5115/artists').then((res)=>{
   //   setArtistList(res.data)
-  //   console.log(res.data)
+  //   
   // })
   // }, [])
   
