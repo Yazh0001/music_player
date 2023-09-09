@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useRef } from 'react'
 import Volume from './Volume';
 
-import thundercat from './thundercat.png'
+// import thundercat from './thundercat.png'
 export default function Console({audioElem, currentSong, setCurrentSong, songs, isplaying, setisplaying}) {
   const clickRef = useRef();
   const [volume, setVolume] = useState();
